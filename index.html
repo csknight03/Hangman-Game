@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+	<!-- bootstraps -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="row">
+		<div class="col-lg-2"></div>
+			<header class="header col-lg-8">Disneyland Themed Hangman Game</header>
+		<div class="col-lg-2"></div>
+	</div>
+	<!-- Work on Begin button later -->
+	<!-- <div class="row">
+		<div class="col-lg-5"></div>
+			<button id="begin" type="button" class="btn btn-primary btn-lg col-lg-2">Press To Begin</button>
+		<div class="col-lg-5"></div>
+	</div> -->
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<h1 class="instructions">Guess a letter to see if you can figure out which iconic Disneyland thing this is...</h1>
+
+			<div class="panel panel-default">
+			 	<div class="panel-heading">
+			 		<h3 class="panel-title">Thing to guess</h3>
+			 	</div>
+
+				<div class="panel-body">
+					<h2 id="randomWordDiv">_ _ _ _ _ _ _</h2>
+				</div>
+			</div>		
+		</div>
+
+		<div class="col-lg-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Wrong Guesses: <span id="wrongGuesses"></span>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Guesses Left: <span id="numGuesses"></span>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Win Counter: <span id="winCounter"></span>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					Loss Counter: <span id="lossCounter"></span>
+				</div>
+			</div>
+		<div class="col-lg-2"></div>
+	</div>
+	
+</body>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script src="assets/javascript/game.js"></script>
+</html>
