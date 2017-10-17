@@ -63,10 +63,15 @@ var doubleWord = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
  		blanksAndSuccesses = [];
  		doubleWord = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "];
  		
+
  		for (var i = 0; i < choosenWord.length; i++) {
- 			blanksAndSuccesses.push("_");
- 			document.getElementById("randomWordDiv")
- 		}
+ 			if(choosenWord[i] === " "){
+ 				blanksAndSuccesses.push("-");
+ 			} else {
+	 			blanksAndSuccesses.push("_");
+	 		}
+	 	}
+	 	console.log(blanksAndSuccesses);
 
  		// Update HTML
  		document.getElementById("randomWordDiv").innerHTML = blanksAndSuccesses.join(" ");
